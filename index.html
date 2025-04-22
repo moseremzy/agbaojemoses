@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Moses's Portfolio">
+    <link rel="icon" href="./images/me.jpg" sizes="any">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/0855e51304.js" crossorigin="anonymous"></script>
+    <script src = "./js/interactive.js"></script>
+    <title>Moses's Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <ul>
+            <li><a onclick = "scroll_to('About')" id = "About" class = "tab" style>About</a></li>
+            <li><a onclick = "scroll_to('projects')" id = "projects" class = "tab" style>Projects</a></li>
+            <li><a onclick = "scroll_to('skills')" id = "skills" class = "tab" style>Skills</a></li>
+            <li><a onclick = "scroll_to('services')" id = "services" class = "tab" style>Services</a></li>
+            <li><a onclick = "scroll_to('contact')" id = "contact" class = "tab" style>Contact</a></li>
+        </ul>
+    </header>
+
+    <main class = "container">
+
+      <div class = "first_section">
+            <h3>LET'S EXPLORE WEB DEVELOPMENT</h3> 
+            <h3>IN DEPTH TOGETHER</h3>
+            <h1>You Need a Website of Any Kind? <span style = "color: rgb(92, 168, 230); margin: 0"> I Am Your Guy <i style = "vertical-align: middle; color: rgb(202, 130, 199);" class="fa-solid fa-handshake-simple"></i></span></h1>
+            <p>Hi! I'm Moses Agbaoje Website Developer</p>
+            <a href = "mailto:agbaojemoses@gmail.com">Let's get in touch <i class="fa-solid fa-paper-plane"></i></a>
+      </div>
+
+      <div class = "second_section">
+       
+        <div id = "info">
+          <h2>Hello, It's Me</h2>
+          <h1>Moses Agbaoje</h1>
+          <h2>And I'm a 
+             <span style = "color: rgb(202, 130, 199);" id = "span_writer"></span>
+             <span id = "typer">|</span>
+          </h2>
+             <p>I am an Highly skilled and detail-oriented full-stack developer with a strong passion for building robust, scalable, and user-friendly web applications.</p>
+          <a href = "https://www.linkedin.com/in/agbaoje-moses-190018189/"><i class="fa-brands fa-linkedin"></i></a> 
+          <a href = "https://github.com/moseremzy"><i class="fa-brands fa-github"></i></a>
+          <a href = "https://wa.me/+2347063131606"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href = "mailto:agbaojemoses@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href = "./document/RESUME.pdf" download id = "download">Download Resume</a>
+        </div>
+
+        <div id = "image">
+           <img src = "/images/me.jpg" alt = "profile picture">
+        </div>   
+
+     </div>
+     
+
+     <div class = "third_section">
+        <h1>A Small Selection Of <span style = "color: rgb(202, 130, 199);">My Recent Projects</span></h1>
+        
+        <div class = "all_projects">
+      
+         <!-- <div class = "project">
+            <a href = "https://easyrentage.com/">
+            <img src = "./images/easyrentage.PNG">
+            <h3>EasyRentage - A Real Estate Marketplace</h3>
+            <p> EasyRentage is an innovative web application designed to simplify the process of finding and managing rental properties.</p>
+            
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+            <span>
+               <img src = "images/vue.png">
+               <img src = "images/swr.png">
+               <img src = "images/express.png">
+               <img src = "images/mongodb.png">
+            </span>  
+            
+            <span><a href = "https://easyrentage.com/" id = "view_site">View Live Site <i class="fa-solid fa-paper-plane" style = "border: 0; font-size: 13px; vertical-align: text-top; margin-left: 10px;"></i> </a></span>
+            </div>
+            </a>
+         </div> -->
+
+         <div class = "project">
+            <a href = "https://mosesfoodorderingapp.kelvinspice.com.ng/">
+            <img src = "./images/kelvinspice.PNG">
+            <h3>Taste It - A Food Ordering Web App</h3>
+            <p>A full-stack food ordering platform that allows users to browse, order, and track food seamlessly. Built with a modern front-end framework and a robust backend API, the system ensures real-time updates, smooth user interaction, and secure authentication.</p>
+            
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+            <span>
+               <img src = "images/vue.png">
+               <img src = "images/express.png">
+               <img src = "images/mysql.png">
+            </span>  
+            
+            <span><a href = "https://mosesfoodorderingapp.kelvinspice.com.ng/" id = "view_site">View Live Site <i class="fa-solid fa-paper-plane" style = "border: 0; font-size: 13px; vertical-align: text-top; margin-left: 10px;"></i> </a></span>
+
+            </div>
+            </a>
+         </div>
+
+
+         <div class = "project">
+            <a href = "https://mosesfoodorderingappadmin.kelvinspice.com.ng/">
+            <img src = "./images/tasteit.PNG">
+            <h3>Taste It - A Food Ordering Web App Admin Dashboard</h3>
+            <p>A full-stack admin dashboard built with Vue and Express for managing orders, users, and menus in real-time. It features secure authentication, responsive design, and a robust API for seamless and efficient backend operations.</p>
+            
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+            <span>
+               <img src = "images/vue.png">
+               <img src = "images/express.png">
+               <img src = "images/mysql.png">
+            </span>  
+            
+            <span><a href = "https://mosesfoodorderingappadmin.kelvinspice.com.ng/" id = "view_site">View Live Site <i class="fa-solid fa-paper-plane" style = "border: 0; font-size: 13px; vertical-align: text-top; margin-left: 10px;"></i> </a></span>
+
+            </div>
+            </a>
+         </div>
+
+
+         <div class = "project">
+            <a href = "https://birthdaycalculator.wuaze.com/">
+            <img src = "./images/birthday_calculator.PNG">
+            <h3>Birthday Calculator</h3>
+            <p>A lightweight birthday calculator app built using (HTML, CSS, JS, PHP). Find out how many years, months, weeks, days, hours, minutes and secods you have lived.</p>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span>
+               <img src = "images/html.png">
+               <img src = "images/css.png">
+               <img src = "images/js.png">
+               <img src = "images/php.png">
+            </span>  
+      
+            <span><a href = "https://birthdaycalculator.wuaze.com/" id = "view_site">View Live Site <i class="fa-solid fa-paper-plane" style = "border: 0; font-size: 13px; vertical-align: text-top; margin-left: 10px;"></i> </a></span>
+            </div>
+            </a>
+        </div>
+       
+        </div>
+      </div>
+     
+
+     <!-- <div class = "fourth_section">
+         <h1>Kind Words From <span style = "color: rgb(202, 130, 199);">Satisfied Clients</span></h1>
+         <div class = "testimonies">
+
+
+    <div class = "testimony">
+      <p>Moses is a genius! He delivered my e-commerce website ahead of schedule and exceeded my expectations. His attention to detail and responsiveness to feedback were impressive. I've already recommended him to my network.</p>
+      <div>
+          <img src="./images/chen.avif" alt="">
+          <h1>Emily Chen</h1>
+          <p>Founder, Kelvins Spice</p>
+      </div>
+ </div>
+
+
+ <div class = "testimony">
+   <p>Moses is a talented web developer who truly cares about his clients. He listened to my needs and created a custom solution that boosted my online presence. His Professionalism and patience are rare in this industry.</p>
+   <div>
+       <img src="./images/daniel.jpg" alt="">
+       <h1>Daniel</h1>
+       <p>Founder, EasyRentage</p>
+   </div>
+</div>
+
+
+        <div class = "testimony">
+            <p>I was skeptical about hiring a freelancer, but Moses proved me wrong. He transformed my outdated website into a modern, user-friendly masterpiece. His communiction skills and expertise are to-notch. Five stars!</p>
+            <div>
+                <img src="./images/lee.jpg" alt="">
+                <h1>David Lee</h1>
+                <p>Entrepenuer</p>
+            </div>
+        </div>
+     </div>
+     </div> -->
+
+
+     <div class = "fifth_section">
+         <h1>My <span style = "color: rgb(202, 130, 199);">Top Skills</span></h1>
+         
+         <div class = "grid">
+
+         <div class = "skills">
+
+            <span class = "circle1"></span>
+
+            <h2>Programming Languages</h2>
+             
+             <div class = "skill">
+                <img src = "images/html.png">
+                <p>HTML</p>
+             </div>
+
+             <div class = "skill">
+                <img src = "images/css.png">
+                <p>CSS</p>
+             </div>
+
+             <div class = "skill">
+                <img src = "images/js.png">
+                <p>JavaScript</p>
+             </div>
+
+             <div class = "skill">
+                <img src = "images/php.png">
+                <p>PHP</p>
+             </div>
+         
+        </div>
+
+        <div class = "skills">
+
+            <span class = "circle3"></span>
+
+            <h2>Libaries</h2>
+             
+             <div class = "skill">
+                <img src = "images/jquery.png">
+                <p>Jquery</p>
+             </div>
+
+             <div class = "skill">
+                <img src = "images/sass.png">
+                <p>SASS</p>
+             </div>
+
+             <div class = "skill">
+                <img src = "images/swr.png">
+                <p>SWRV</p>
+             </div>
+
+        </div>
+
+
+        <div class = "skills">
+
+            <span class = "circle2"></span>
+
+            <h2>Frameworks</h2>
+             
+             <div class = "skill">
+                <img src = "images/express.png">
+                <p>Express.js</p>
+             </div>
+
+             <!-- <div class = "skill">
+                <img src = "images/react.png">
+                <p>React</p>
+             </div> -->
+
+             <div class = "skill">
+                <img src = "images/vue.png">
+                <p>Vue</p>
+             </div>
+
+        </div>
+
+
+        <div class = "skills">
+
+            <span class = "circle3"></span>
+
+            <h2>Database Management</h2>
+             
+             <div class = "skill">
+                <img src = "images/mongodb.png">
+                <p>MongoDB</p>
+             </div>
+
+             <div class = "skill">
+                <img src = "images/mysql.png">
+                <p>MySQL</p>
+             </div>
+
+        </div>
+
+
+        <div class = "skills">
+
+            <span class = "circle1"></span>
+
+            <h2>Technical Tools</h2>
+             
+             <div class = "skill">
+                <img src = "images/vscode.png">
+                <p>VS Code</p>
+             </div>
+
+             <div class = "skill">
+                <img src = "images/github.png">
+                <p>GitHub</p>
+             </div>
+
+             <div class = "skill">
+                <img src = "images/gpt.jpg">
+                <p>ChatGPT</p>
+             </div>
+
+        </div>
+
+     </div>
+
+     </div>
+
+
+     <div class = "sixth_section">
+        
+        <h1>My <span style = "color: rgb(202, 130, 199);">Services</span></h1>
+        
+        <div class = "grid">
+
+        <div class = "services">
+           <span class = "circle1"></span>
+           <h2>Website Development</h2>
+           <p>Let's build a Custom and Professional website tailored to your unique needs, enhancing your Business's online presence and brand credibility.</p>
+        </div>
+
+        <div class = "services">
+            <span class = "circle2"></span>
+            <h2>Web Application Development</h2>
+            <p>Do you want to build a complete Web Application with user-friendly interface, user Authentication, Payment Gateway and all other features you can think of ? Look no further.</p>
+         </div>
+
+         <div class = "services">
+            <span class = "circle3"></span>
+            <h2>Website/App Maintenance</h2>
+            <p>We also help to ensure your online presence remains robust, secure, and up-to-date with our comprehensive website maintenance services which includes: Monitoring, Security, Content Management, Performance Optimization and Technical Support. </p>
+         </div>
+
+     </div>
+
+    </div>
+ 
+     <div class = "seventh_section">
+        <h1>Ready to take <span style = "color: rgb(202, 130, 199);">your digital presence</span> to the next level?</h1>
+        <p>Reach out to me today and let's turn your dream into a reality.</p> 
+        <a href = "https://wa.me/+2347063131606">Let's get in touch <i class="fa-solid fa-paper-plane"></i></a>
+    </div>
+
+    </main>
+
+    <footer>
+       <span id = "copyright"></span> 
+       <span id = "footer_icons">
+         <a href = "https://www.linkedin.com/in/agbaoje-moses-190018189/"><i class="fa-brands fa-linkedin"></i></a> 
+         <a href = "https://github.com/moseremzy"><i class="fa-brands fa-github"></i></a>
+         <a href = "https://wa.me/+2347063131606"><i class="fa-brands fa-whatsapp"></i></a>
+         <a href = "mailto:agbaojemoses@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+       </span> 
+    </footer>
+</body>
+</html>
