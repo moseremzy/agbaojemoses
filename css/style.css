@@ -175,6 +175,12 @@
         font-size: 16px;
     }
 
+    small {
+        color: rgb(139, 136, 136);
+        display: block;
+        margin: 5px 0 0 0;
+    }
+
     div.project a p{
         color: rgb(197, 197, 197);
         font-size: 15px;
@@ -1277,6 +1283,12 @@
         color: rgb(197, 197, 197);
         margin-top: 30px;
         font-size: 18px;
+    }
+
+    small {
+        color: rgb(139, 136, 136);
+        display: block;
+        margin: 5px 0 0 0;
     }
 
     div.project a p{
