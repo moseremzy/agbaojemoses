@@ -1,9 +1,21 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* Bold headings for strong hierarchy */
+}
+p, a, small, span, li {
+    font-weight: 400; /* Regular weight for readability */
+}
+/* Optional: Make buttons/links slightly bolder for better UX */
+a {
+    font-weight: 500;
+}
+
+
 /* MOBILE VIEW */
 @media only screen and (max-width: 640px) {
   * {
         padding: 0;
         margin: 0;
-        font-family: Poppins, sans-serif;
+        font-family: 'Inter', sans-serif;
     }
 
     body {
@@ -77,16 +89,37 @@
         text-decoration: none;
         border: 1px solid rgb(34, 139, 224);
         padding: 13px 25px;
-        background-color: black;
+        background-color: rgb(34, 139, 224);
         color: white;
         font-size: 14px;
         cursor: pointer;
         border-radius: 8px;
+        font-weight: 600;
+        display: inline-block;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 6px rgba(34, 139, 224, 0.25);
+        margin: 10px 5px;
+    }
+
+    div.first_section a:hover {
+        background-color: rgb(25, 110, 180);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(34, 139, 224, 0.4);
+    }
+
+    div.first_section a:active {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 10px rgba(34, 139, 224, 0.3);
     }
 
     div.first_section a i {
         margin-left: 10px;
         font-size: 11px;
+        transition: transform 0.3s ease;
+    }
+
+    div.first_section a:hover i {
+        transform: translateX(4px);
     }
 
     div.second_section {
@@ -442,17 +475,37 @@
         text-decoration: none;
         border: 1px solid rgb(34, 139, 224);
         padding: 13px 25px;
-        background-color: black;
+        background-color: rgb(34, 139, 224);
         color: white;
         font-size: 14px;
         cursor: pointer;
         border-radius: 8px;
-        font-weight: bold;
+        font-weight: 600;
+        display: inline-block;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 6px rgba(34, 139, 224, 0.25);
+        margin: 10px 5px;
+    }
+
+    div.seventh_section a:hover {
+        background-color: rgb(25, 110, 180);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(34, 139, 224, 0.4);
+    }
+
+    div.seventh_section a:active {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 10px rgba(34, 139, 224, 0.3);
     }
 
     div.seventh_section a i {
         margin-left: 10px;
         font-size: 11px;
+        transition: transform 0.3s ease;
+    }
+
+    div.seventh_section a:hover i {
+        transform: translateX(4px);
     }
 
     footer {
@@ -478,6 +531,14 @@
         color: rgb(34, 139, 224);
         margin: 9px 6px;
    }
+
+   .project-video {
+        display: none; 
+    }
+
+    .project-media {
+        height: 150px; /* Matches your mobile image height */
+    }
 
    #typer {
         color: rgb(202, 130, 199);;
@@ -546,7 +607,7 @@
     * {
           padding: 0;
           margin: 0;
-          font-family: Poppins, sans-serif;
+          font-family: 'Inter', sans-serif;
       }
   
       body {
@@ -620,16 +681,37 @@
           text-decoration: none;
           border: 1px solid rgb(34, 139, 224);
           padding: 13px 25px;
-          background-color: black;
+          background-color: rgb(34, 139, 224);
           color: white;
           font-size: 14px;
           cursor: pointer;
           border-radius: 8px;
+          font-weight: 600;
+          display: inline-block;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          box-shadow: 0 4px 6px rgba(34, 139, 224, 0.25);
+          margin: 10px 5px;
+      }
+
+      div.first_section a:hover {
+          background-color: rgb(25, 110, 180);
+          transform: translateY(-3px);
+          box-shadow: 0 8px 20px rgba(34, 139, 224, 0.4);
+      }
+
+      div.first_section a:active {
+          transform: translateY(-1px);
+          box-shadow: 0 4px 10px rgba(34, 139, 224, 0.3);
       }
   
       div.first_section a i {
           margin-left: 10px;
           font-size: 11px;
+          transition: transform 0.3s ease;
+      }
+
+      div.first_section a:hover i {
+          transform: translateX(4px);
       }
   
       div.second_section {
@@ -1012,17 +1094,37 @@
           text-decoration: none;
           border: 1px solid rgb(34, 139, 224);
           padding: 13px 25px;
-          background-color: black;
+          background-color: rgb(34, 139, 224);
           color: white;
           font-size: 14px;
           cursor: pointer;
           border-radius: 8px;
-          font-weight: bold;
+          font-weight: 600;
+          display: inline-block;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          box-shadow: 0 4px 6px rgba(34, 139, 224, 0.25);
+          margin: 10px 5px;
+      }
+
+      div.seventh_section a:hover {
+          background-color: rgb(25, 110, 180);
+          transform: translateY(-3px);
+          box-shadow: 0 8px 20px rgba(34, 139, 224, 0.4);
+      }
+
+      div.seventh_section a:active {
+          transform: translateY(-1px);
+          box-shadow: 0 4px 10px rgba(34, 139, 224, 0.3);
       }
   
       div.seventh_section a i {
           margin-left: 10px;
           font-size: 11px;
+          transition: transform 0.3s ease;
+      }
+
+      div.seventh_section a:hover i {
+          transform: translateX(4px);
       }
   
       footer {
@@ -1084,6 +1186,7 @@
   
   }
   /* TABLET VIEW */
+
 
 
   /* DESKTOP VIEW */
@@ -1168,17 +1271,38 @@
           text-decoration: none;
           border: 1px solid rgb(34, 139, 224);
           padding: 13px 30px;
-          background-color: black;
+          background-color: rgb(34, 139, 224);
           color: white;
           font-size: 15px;
           cursor: pointer;
           border-radius: 8px;
+          font-weight: 600;
+          display: inline-block;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          box-shadow: 0 4px 6px rgba(34, 139, 224, 0.25);
+          margin: 10px 5px;
+      }
+
+      div.first_section a:hover {
+          background-color: rgb(25, 110, 180);
+          transform: translateY(-3px);
+          box-shadow: 0 8px 20px rgba(34, 139, 224, 0.4);
+      }
+
+      div.first_section a:active {
+          transform: translateY(-1px);
+          box-shadow: 0 4px 10px rgba(34, 139, 224, 0.3);
       }
   
       div.first_section a i {
           text-decoration: none;
           margin-left: 10px;
           font-size: 11px;
+          transition: transform 0.3s ease;
+      }
+
+      div.first_section a:hover i {
+          transform: translateX(4px);
       }
   
       div.second_section {
@@ -1590,17 +1714,37 @@
           text-decoration: none;
           border: 1px solid rgb(34, 139, 224);
           padding: 13px 25px;
-          background-color: black;
+          background-color: rgb(34, 139, 224);
           color: white;
           font-size: 14px;
           cursor: pointer;
           border-radius: 8px;
-          font-weight: bold;
+          font-weight: 600;
+          display: inline-block;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          box-shadow: 0 4px 6px rgba(34, 139, 224, 0.25);
+          margin: 10px 5px;
+      }
+
+      div.seventh_section a:hover {
+          background-color: rgb(25, 110, 180);
+          transform: translateY(-3px);
+          box-shadow: 0 8px 20px rgba(34, 139, 224, 0.4);
+      }
+
+      div.seventh_section a:active {
+          transform: translateY(-1px);
+          box-shadow: 0 4px 10px rgba(34, 139, 224, 0.3);
       }
   
       div.seventh_section a i {
           margin-left: 10px;
           font-size: 11px;
+          transition: transform 0.3s ease;
+      }
+
+      div.seventh_section a:hover i {
+          transform: translateX(4px);
       }
   
       footer {
@@ -1661,5 +1805,112 @@
     
 }
   
-  }
+}
   /* DESKTOP VIEW */
+
+  
+
+  /* =========================================
+   PROJECT VIDEO HOVER EFFECTS
+   ========================================= */
+.project-media {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Matches your original image height */
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s ease;
+}
+
+.project-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.4s ease;
+    pointer-events: none; /* Prevents video from blocking clicks */
+}
+
+/* Show video and fade out image on hover */
+.project:hover .project-media img {
+    opacity: 0;
+}
+
+.project:hover .project-video {
+    opacity: 1;
+}
+
+footer i {
+    border: 2px solid rgb(34, 139, 224);
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    color: rgb(34, 139, 224);
+    margin: 9px 6px;
+}
+
+/* ==================== FOOTER FOLLOW BADGE ==================== */
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-follow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(24, 119, 242, 0.12);
+    border: 1px solid rgba(24, 119, 242, 0.5);
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+}
+
+.footer-follow i {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    color: rgb(24, 119, 242);
+    transition: color 0.3s ease;
+}
+
+.footer-follow:hover {
+    background-color: rgb(24, 119, 242);
+    border-color: rgb(24, 119, 242);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(24, 119, 242, 0.35);
+}
+
+.footer-follow:hover i {
+    color: white;
+}
+
+.footer-follow:active {
+    transform: translateY(0);
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-follow {
+        font-size: 12px;
+        padding: 7px 14px;
+    }
+}
+
