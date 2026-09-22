@@ -314,51 +314,58 @@
                 </div>
 
 
-                <!-- ==================== FOOD ORDERING (video-enabled) ==================== -->
+                <!-- ==================== FOOD ORDERING (video-enabled with controls) ==================== -->
 
                 <div class="project">
 
-                    <a href="https://mosesfoodorderingapp.kelvinspice.com.ng/"
+                    <!-- Video is placed OUTSIDE the <a> tag. 
+                        This ensures clicking play/fullscreen doesn't accidentally navigate away. -->
+                    <div class="project-media">
+                        <video class="project-video" autoplay muted loop playsinline controls>
+                            <source src="./videos/food_ordering.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <!-- The <a> tag now wraps only the text and details. 
+                        Clicking this area still takes the user to the live site. -->
+                    <a 
                         target="_blank"
-                        rel="noopener noreferrer">
-                
-                        <div class="project-media">
-                            <!-- Image removed. Video now occupies this space entirely. -->
-                            <video class="project-video" autoplay muted loop playsinline>
-                                <source src="./videos/food_ordering.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                
+                        rel="noopener noreferrer"
+                        style="text-decoration: none; color: inherit; display: block;">
+
                         <h3>Food Ordering Web Application</h3>
-                
+
                         <small>
                             Customer ordering platform + admin dashboard
                         </small>
-                
+
                         <p>
                             A full-stack food ordering platform that allows
                             customers to browse meals and place orders, supported
                             by an administrative dashboard for managing users,
                             menus and orders.
                         </p>
-                
+
                         <div style="display: flex; align-items: center; justify-content: space-between;">
-                
+
                             <span>
                                 <img src="images/vue.png" alt="Vue">
                                 <img src="images/express.png" alt="Express">
                                 <img src="images/mysql.png" alt="MySQL">
                             </span>
-                
-                            <!-- Buttons are commented out as per your snippet, 
-                                 but you can uncomment the Watch Demo / Live Site buttons here if needed -->
-                
-                        </div>
-                
-                    </a>
-                
-                </div>
 
+                            <!-- Changed from <a> to <span> since the whole block is now clickable -->
+                            <!-- <span id="view_site">
+                                Live Site
+                                <i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="border: 0; font-size: 13px; vertical-align: text-top; margin-left: 10px;"></i>
+                            </span> -->
+
+                        </div>
+
+                    </a>
+
+                </div>
 
                 <!-- ==================== BIRTHDAY CALCULATOR ==================== -->
 
