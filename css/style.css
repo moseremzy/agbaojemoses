@@ -1813,12 +1813,18 @@ a {
   /* =========================================
    PROJECT VIDEO HOVER EFFECTS
    ========================================= */
-.project-media {
-    position: relative;
+   .project-media {
     width: 100%;
-    height: 200px; /* Matches your original image height */
+    aspect-ratio: 16 / 9; /* Or whatever ratio your design uses */
     overflow: hidden;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: #000; /* Fallback background while video loads */
+}
+
+.project-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .project-media img {
@@ -1826,18 +1832,6 @@ a {
     height: 100%;
     object-fit: cover;
     transition: opacity 0.4s ease;
-}
-
-.project-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0; /* Hidden by default */
-    transition: opacity 0.4s ease;
-    pointer-events: none; /* Prevents video from blocking clicks */
 }
 
 /* Show video and fade out image on hover */
